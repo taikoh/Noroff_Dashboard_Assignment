@@ -10,6 +10,8 @@ Documentation/
 Web Application/
 - CSS/
   - style.css          # Main stylesheet
+- HTML /
+  - index.html         # Main HTML file
 - Images/
   - Company_logo.png   # Company logo image
 - JS/
@@ -17,7 +19,6 @@ Web Application/
 - Libraries/
   - jquery-3.7.1.js    # jQuery library
   - jquery.validate.min.js # jQuery validation plugin
-- index.html           # Main HTML file
 - README.md            # This documentation
 
 ## Features
