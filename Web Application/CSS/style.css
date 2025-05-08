@@ -1,0 +1,390 @@
+/* General Styles */
+
+p,
+h1,
+h2,
+h3,
+input,
+select,
+td {
+	font-family: "Calibri", sans-serif;
+	color: #212529;
+}
+
+/* Logo */
+
+.brandLogo {
+	position: absolute;
+	top: 10px;
+	right: 47%;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px rgba(14, 142, 168, 0.3);
+	object-fit: cover;
+	z-index: 100;
+	border: 3px solid #0e8ea8;
+	transition: transform 0.3s ease;
+}
+
+.brandLogo:hover {
+	transform: scale(1.05);
+}
+
+/* Tables */
+
+.table {
+	box-shadow: 0 4px 8px rgba(14, 142, 168, 0.2);
+	margin-bottom: 30px;
+	vertical-align: middle;
+}
+
+.table img {
+	border-radius: 40%;
+}
+
+.table th,
+.table td {
+	border: 1px solid #212529;
+}
+
+.table th {
+	font-family: "Consolas", monospace;
+	font-weight: 600;
+	background-color: #0e8ea8;
+	color: #fff;
+	font-size: 21px;
+	padding: 12px 8px;
+}
+
+.table td {
+	background-color: #83d1e1;
+	color: #212529;
+	transition: background-color 0.2s;
+}
+
+.staffTable tr:hover td {
+	background-color: #56c4da;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.deliveryTable tr:hover td {
+	background-color: #56c4da;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.table tr.selectedStaff td {
+	background-color: #0e8ea8;
+	color: #fff;
+}
+
+.table tr.selectedDelivery td {
+	background-color: #0e8ea8;
+	color: #fff;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-radius: 8px;
+	border: 1px solid #212529;
+	overflow: hidden;
+	text-align: center;
+}
+
+/* Headers */
+
+.mainHeader {
+	text-align: center;
+	color: #212529;
+	font-size: 32px;
+	border: none;
+	margin-bottom: 25px;
+	position: relative;
+	padding-bottom: 10px;
+	margin-top: -50px;
+}
+
+.mainHeader:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	right: 25%;
+	height: 3px;
+	background: linear-gradient(to right, transparent, #0e8ea8, transparent);
+}
+
+.header {
+	text-align: center;
+	color: #212529;
+	font-size: 25px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #0e8ea8;
+	display: inline-block;
+}
+
+/* Navbar */
+
+.navbar {
+	background-color: #0e8ea8;
+	color: #fff;
+	padding: 0;
+	margin-bottom: 150px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-family: "Consolas", monospace;
+	color: #fff;
+	background-color: #0e8ea8;
+	padding: 10px 15px;
+	margin: 0;
+	font-weight: bold;
+	border-right: 1px solid #212529;
+	letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+	color: #fff;
+}
+
+.navbar-nav {
+	display: flex;
+	width: 100%;
+}
+
+.nav-item {
+	font-family: "Consolas", monospace;
+	border-right: 1px solid #212529;
+	font-weight: bold;
+}
+
+.nav-link {
+	color: #fff;
+	padding: 10px 15px;
+	letter-spacing: 0.5px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu {
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	border: 1px solid #0e8ea8;
+	background-color: #83d1e1;
+}
+
+.dropdown-item {
+	font-family: "Consolas", monospace;
+	padding: 10px 15px;
+	color: #212529;
+	border: 1px solid #212529;
+	border-top: none;
+	font-weight: bold;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+	background-color: #45c0d8;
+}
+
+@media (max-width: 960px) {
+	.navbar-collapse {
+		background-color: #0e8ea8;
+	}
+
+	.nav-item {
+		border-right: none;
+		border-bottom: 1px solid #212529;
+	}
+
+	button {
+		width: 45%;
+		margin: 5px 2.5%;
+	}
+
+	.brandLogo {
+		top: 0px;
+		left: 50%;
+		width: 70px;
+		height: 70px;
+	}
+}
+
+/* Buttons */
+
+button {
+	font-family: "Consolas", monospace;
+	min-width: 80px;
+	width: auto;
+	padding: 8px 15px;
+	border: none;
+	font-weight: bold;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.btnCancel {
+	background-color: #dc3545;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: -25px;
+	margin-bottom: 10px;
+	border: 1px solid #212529;
+	float: right;
+}
+
+.btnCancel:hover {
+	background-color: #b30012;
+}
+
+.btnCancel:active {
+	background-color: #70000b;
+}
+
+.btnConfirm {
+	background-color: #198754;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: -25px;
+	margin-bottom: 10px;
+	border: 1px solid #212529;
+	float: left;
+}
+
+.btnConfirm:hover {
+	background-color: #167247;
+}
+
+.btnConfirm:active {
+	background-color: #0e4b2f;
+}
+
+.btnClear {
+	float: right;
+	border-radius: 10px;
+}
+
+/* Table Select */
+
+select,
+input {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #45c0d8;
+	border-radius: 4px;
+	background-color: white;
+	font-size: 14px;
+	color: #212529;
+}
+
+select:focus,
+input:focus {
+	outline: none;
+	border-color: #0e8ea8;
+	box-shadow: 0 0 3px rgba(25, 159, 179, 0.5);
+}
+
+/* Toast */
+
+#staffToasts {
+	font-family: "Calibri", sans-serif;
+	color: #212529;
+	text-align: center;
+	position: fixed;
+	top: 60%;
+	right: 20px;
+	transform: translateY(-50%);
+	z-index: 999;
+}
+
+#deliveryToasts {
+	font-family: "Calibri", sans-serif;
+	color: #ffffff;
+	text-align: center;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	top: 60%;
+	right: 20px;
+	transform: translateY(-50%);
+	z-index: 999;
+	font-weight: bold;
+}
+
+.toast {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+.toast-header {
+	background: linear-gradient(135deg, #d6001c, #e70017);
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast-body {
+	background-color: #990012;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
+	align-items: center;
+	gap: 10px;
+}
+
+.toast-body img {
+	border-radius: 40%;
+}
+
+.toast .btn-close {
+	opacity: 0.3;
+}
+
+.toast .btn-close:hover {
+	opacity: 1;
+}
+
+/* SweetAlert2 */
+
+.swal2-popup {
+	color: #212529;
+	font-family: "Calibri", sans-serif;
+}
+
+.swal2-confirm {
+	font-family: "Consolas", monospace;
+	background-color: #0e8ea8;
+}
+
+.swal2-cancel {
+	font-family: "Consolas", monospace;
+	background-color: #e70017;
+}
+
+/* Icons */
+
+.vehicleIcon {
+	font-size: 20px;
+}
+
+/* date and time */
+
+#digitalClock {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
