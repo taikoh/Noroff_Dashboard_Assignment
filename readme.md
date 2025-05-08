@@ -1,6 +1,7 @@
 # WeDeliverTech Reception Management Dashboard
 
 ![WeDeliverTech Logo](../Images/Company_logo.png)
+<img src="../Images/Company_logo.png"/>
 
 ## Project Structure
 
